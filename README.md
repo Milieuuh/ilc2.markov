@@ -29,26 +29,29 @@ Hereafter, for each classes give function to be tested. Remember that all functi
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| main |  |  | 
-| readFileAsString |  |  | 
+| main | D | appelle d'autre fonction, donc pas la peine de tester | 
+| readFileAsString | T |  | 
 
 ### Class markov.MarkovChain
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| MarkovChain  |  |  |
-| generateMarkov  |  |  |
-| learn  |  |  |
-| setRgen  |  |  |
+| MarkovChain  | D | constructeur |
+| generateMarkov  | T |  |
+| learn  | T |  |
+| setRgen  | D | setter |
 
 ### Class markov.MarkovData
 
 | Function      |     I A D T     |        Comment |
 | :------------ | :-------------: | :------------- |
-| read  |  |  |
-| learnWord  |  |  |
-| renforceWord  |  |  |
-| Etc.  |  |  |
+| read  | T |  |
+| learnWord  | D | on ne teste pas car cela utilise la méthode put qui est sensé fonctionner |
+| renforceWord  | T |  |
+| containsKeyWord  | D | on ne teste pas car containsKey() doit fonctionner |
+| getLearnedWord  | D | on ne teste pas car get() doit fonctionner |
+| getKeyWord  | D | on ne teste pas car get() doit fonctionner |
+| keyWordSize  | D | on ne teste pas car la méthode size() doit fonctionner |
 
 ## Functions to test now
 
